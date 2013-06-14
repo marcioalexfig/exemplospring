@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!-- Bean declarations go here -->
+	<bean class="br.org.dominio.Aluno" id="aluno" >
+		<property name="nome" value="Teste de Membro A"></property>
+	</bean>
+	<bean class="br.org.dominio.Aluno" id="aluno1" >
+		<property name="nome" value="Teste de Membro A1"></property>
+	</bean>
+	<bean class="br.org.dominio.Professor" id="professor" >
+		<property name="nome" value="Teste de Membro B"></property>
+	</bean>
+	<bean class="br.org.dominio.Turma" id="turma">
+		<property name="alunos">
+			<list>
+				<ref bean="aluno1"/>
+			</list>
+		</property>
+	</bean>
+</beans>
