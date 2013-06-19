@@ -1,7 +1,9 @@
 package br.org.dominio;
 
-import br.org.interf.Membro;
+import javax.inject.Named;
 
+import br.org.interf.Membro;
+@Named
 public class Aluno implements Membro{
 	private String nome;
 	private String telefone;

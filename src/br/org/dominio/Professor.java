@@ -1,7 +1,10 @@
 package br.org.dominio;
 
+import javax.inject.Named;
+
 import br.org.interf.Membro;
 
+@Named
 public class Professor implements Membro{
 	private String nome;
 	public String getNome() {

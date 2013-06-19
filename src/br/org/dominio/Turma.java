@@ -2,6 +2,9 @@ package br.org.dominio;
 
 import java.util.List;
 
+import javax.inject.Named;
+
+@Named
 public class Turma {
 	private String descricao;
 	private List<Aluno> alunos;
